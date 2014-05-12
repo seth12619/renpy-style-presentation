@@ -2,6 +2,16 @@
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
+image bg bonChon = "bgA.png"
+image bg gate = "bgB.png"
+image bg road = "bgC.png"
+image bg costa = "bgD.png"
+image bg prac = "bgG.png"
+image bg gonz = "bgH.png"
+image bg mvp = "bgE.png"
+image bg redRoad = "bgF.png"
+image bg gonz2 = "bgL.png"
+image bg wash = "bgJ.png"
 
 # Declare characters used by this game.
 define secu = Character('Guard C', color="#c8ffc8")
@@ -20,8 +30,9 @@ define cellRing = Character(_("Cellphone"),
 
 # The game starts here.
 label start:
-    
+    scene bg bonChon
     play music "bgmStart.mp3" fadein 2
+    with dissolve
     
     #MC - Dynamic Character
     $ MC = DynamicCharacter("MC", color=(192, 64, 64, 255))
@@ -54,8 +65,9 @@ label start:
     "" "Have I mentioned that I was outside the school eating lunch? Now I have to trek all the way back in this heat... Ugh..."
     
 label reasoning:
-    #Change scene to gate 3.5
+    scene bg gate
     play music "bgmMain.mp3" fadein 2
+    with fade
     
     secu "Good Afternoon sir. The climate's quite sizzling today isn't it?"
     
@@ -86,7 +98,8 @@ label reasoning:
         un "It seems you are capable of Abstract Reasoning and can easily make use of analogies"
         
 label warmth:
-    #Change scene
+    scene bg road
+    with fade
     
     "" "Almost there..."
     
@@ -114,7 +127,8 @@ label warmth:
         un "It seems as though you can be pretty outgoing, yet distant, thus leading to a middleground when it comes to Warmth"
         
 label liveliness:
-    #change scene
+    scene bg mvp
+    with fade
     
     "" "Arrgh, why must I cross thee Sun, when I walk to places in this school?!?"
     
@@ -187,7 +201,8 @@ label rule:
         un "Not sure if you should stick with your curfew or stay overnight with your friend? Bordering on both? It seems as though you are conscious about the rules, yet are willing to forego them as well"
         
 label Social:
-    #change scene
+    scene bg prac
+    with fade
     
     "" "Alright, a party. Seems like this day's getting interesting..."
     
@@ -254,7 +269,8 @@ label dom:
         un "Just going with the flow? Seems like you don't really care that much, who knows you might take the lead, or continue on going with the flow depending on what happens"
     
 label sensitive:
-    #Change Scene
+    scene bg redRoad
+    with fade
     
     "" "Alright; I can see the building now... I don't even know where ADSA is..."
     
@@ -302,6 +318,8 @@ label sensitive:
         un "No Comment... Maybe you're sensitive enough to take into account your friend's feelings about the show, and also calm enough not to comment..."
         
 label open:
+    scene bg costa
+    with fade
     
     "" "Oh my, seems like the Guidon's paper stack is quite high; it won't hurt to read one"
 
@@ -325,6 +343,8 @@ label open:
         un "stub dialogue"
     
 label perf:
+    scene bg gonz
+    with fade
     
     menu:
             "" "Stub dialogue"
@@ -348,6 +368,8 @@ label perf:
         un "Stub dialogue"
                 
 label priv:
+    scene bg gonz2
+    with fade
     
     menu:
             "" "Umm... Err..."
@@ -369,6 +391,8 @@ label priv:
         un "Stub dialogue"
                 
 label vigil:
+    scene bg wash
+    with fade
     
     menu:
             "" "Stub dialogue"
