@@ -238,7 +238,7 @@ label Social:
         jump dom
         
     if response is False:
-        un "Shy are you? I guess you're not that Socially Bold, being in the production has its perks after all"
+        un "Shy aren't you? I guess you're not that Socially Bold, being in the production has its perks after all"
         jump dom
         
     else:
@@ -546,9 +546,9 @@ label catell:
     
     MC "Wow, that's really amazing! So I was under an experiment the entire time?"
     
-    cat "Yes you were"
+    cat "Yes. Everyone directly and indirectly made you make several choices based on the 16 Personality Factors"
     
-    MC "Bonus?"
+    MC "Bonus Points?"
     
 label credits:
     
