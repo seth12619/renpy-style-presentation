@@ -14,6 +14,7 @@ image bg gonz2 = "bgL.png"
 image bg wash = "bgJ.png"
 image bg black = "bgBl.png"
 image bg adsa = "bgK.png"
+image bg office = "bgO.png"
 
 
 # Declare characters used by this game.
@@ -482,7 +483,9 @@ label vigil:
                 
 label catell:
     
-    "" "Hmm... Now that he talks about it... Wait, you're that--"
+    "" "Hmm... Now that he talks about it... Huh?"
+    
+    MC "Wait, you're that--"
     
     scene bg black
     with dissolve
@@ -492,16 +495,60 @@ label catell:
     scene bg adsa
     with fade
                 
-    "" "Urrgh... Murgle..."
+    MC "Urrgh... Murgle..."
     
     "" "What happened? I remember that I had to go to the ADSA due to a text, but then multiple things happened"
     
-    "" "Where. Am. I?"
+    MC "Where. Am. I?"
     
     #catell wearing mask comes in
     
-    un "Welcome! Come on in!"
+    un "Welcome [MC!t]! Come on in!"
     
+    scene bg office
+    with fade
+    
+    un "You must be wondering where you are, what just happened to you, or what my identity is."
+    
+    un "Well..."
+    
+    #replace mask sprite with catell sprite
+    
+    un "I am Raymond Catell, the Dean who called you here."
+    
+    MC "W-What? So what happened? Why am I here? Why did I get a message to come over here?"
+    
+    cat "The events you've gone through aren't coincidential, they are part of a test."
+         
+    MC "What? A test? I thought I passed ACET with no complications?"
+    
+    cat "Oh yes you did pass splendidly, but this test checks for your 16 Personality Factors!"
+    
+    cat "I developed it over several decades of research!"
+    
+    MC "Wow, you must be really old..."
+    
+    cat "I did it to be able to judge someone by his or her personality. For me, there are two types of traits—{color=#ff0000}surface traits{/color} and {color=#0c00ff}source traits{/color}"
+    
+    cat "{color=#ff0000}Surface traits{/color} represent the personality characteristics easily seen by others"
+    
+    cat "{color=#0c00ff}Source traits{/color} on the other hand, are the basic traits that underlie the surface traits"
+    
+    cat "For example, shyness and being quiet are surface traits that relate to the source trait of introversion"
+    
+    MC "So?"
+    
+    cat "I identified 16 source traits and developed an assessment questionnaire out of it. It’s called “The Sixteen Personality Factor (16 PF) Questionnaire.” Isn’t that great?"
+    
+    MC "Yes, yes, it is very great! But how do you measure it?"
+    
+    cat "These 16 source traits are treated as trait dimensions  in which there are two opposite traits at each end with a range of possible degrees for each trait measurable along dimension"
+    
+    MC "Wow, that's really amazing! So I was under an experiment the entire time?"
+    
+    cat "Yes you were"
+    
+    MC "Bonus?"
     
 label credits:
     
