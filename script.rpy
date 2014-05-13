@@ -19,6 +19,7 @@ define adsa = Character('ADSA', color="#ff0000")
 define fr = Character('Close Friend G', color="#ffcb05")
 define lit = Character('Lit Group Mate B', color="#f75b68")
 define fr2 = Character('Friend A', color="#ececea")     
+define wom = Character('Woman A', color="#cc5cf2")
 
 define un = Character ('Unknown', color="#d4d4d2")
 define cat = Character('Catell', color="#0096fd")
@@ -322,13 +323,23 @@ label open:
     with fade
     
     "" "Oh my, seems like the Guidon's paper stack is quite high; it won't hurt to read one"
+    
+    "Guidon Newspaper" "Sanggu crippl--"
+    
+    "" "next page"
+    
+    "Guidon Newspaper" "'Blue Eagle the King' to be replaced by 'Wrecking Ball'"
+    
+    un "Explain {color=#ffa500}Openness to change{/color}"
+    
+    un "Explain {color=#ffa500}SELF-RELIANCE{/color}"
 
     menu:
-            "" "stub dialogue"
+            "" "I see... I guess it received a few complaints due to being too old"
             
             "Blue Eagle the King has been played in the campus for years, no need to change it":
                 $ response = True
-            "I agree, it is most definitely the mejority's decision, and this little change won't hurt":
+            "I agree, it is most definitely the majority's decision, and this little change won't hurt":
                 $ response = False
             "It's alright, wrecking ball is not really that bad a song.":
                 $ response = 1
@@ -346,8 +357,20 @@ label perf:
     scene bg gonz
     with fade
     
+    "" "I can see it! Once I make a turn here..."
+    
+    "Group of Students" "We want air-con! Tuition too high, or we go home! We want air-con! Tuition too high, or we go home!"
+
+    "" "Seems like I've just met the radical 'THAC' group, which stands for {color=#f9ecb6}Tuition High thus Air-Con{/color}"
+    
+    un "Explain {color=#ffa500}PERFECTIONISM{/color}"
+    
+    un "Explain {color=#ffa500}TENSION{/color}"
+    
+    wom "We dying of heat, get a hert!"
+    
     menu:
-            "" "Stub dialogue"
+            "" "That woman..."
             
             "Grab the woman's banner, and throw it on the ground while stating that her grammar's horrible":
                 $ response is True
@@ -371,8 +394,25 @@ label priv:
     scene bg gonz2
     with fade
     
+    "" "Alright! There it is! Once I get to that area I will--"
+
+    "Group of Psychology Students" "Bro! Please answer a few of our questions! It's for a project! Please!"
+    
+    "" "D*mn it! I'm trapped!"
+    
+    un "{color=#ffa500}PRIVATENESS{/color} is "
+    
+    un "{color=#ffa500}APPREHENSION{/color} is "
+    
+    MC "Alright, but let me ask you a question afterwards ok?"
+    
+    "" "This might be a chance to ask about that voice..."
+    
+    "Psych. Student B" "Okay, umm sir; do you happen to have any insecurities?"
+    
+    
     menu:
-            "" "Umm... Err..."
+            MC "Umm... Err..."
             
             "I don't have any insecurity, next question?":
                 $ response = True
@@ -391,11 +431,21 @@ label priv:
         un "Stub dialogue"
                 
 label vigil:
+    "Psych. Student C" "Okay sir, now for our second out of 344 questions..."
+    
+    MC "Excuse me, I need to go to the washroom for a bit"
+        
+    "Psych. Student A" "Sure go ahead, please come back though, we're counting on you!"\
+    
+    "" "You wish. 344 questions will take hours!"
+    
     scene bg wash
     with fade
     
+    "" "Washing my face feels so goo--"
+
     menu:
-            "" "Stub dialogue"
+            "" "Man in all black, complete set. Black jacket and mask... This is creepy... What should I do?"
             
             "KYAAAA!!! THIEF CRIMINAL! *attack the person*":
                 $ response = True
@@ -414,7 +464,26 @@ label vigil:
         un "Stub dialogue"
                 
 label catell:
+    
+    play music "bgmCatell.mp3" fadein 2
                 
     "" "Catell should intro himself here"
+    
+    
+label credits:
+    
+    "" "--Credits--"
+    
+    "Credits" "Background Images and Sprites: Nina Sanchez and Aemielvin Loremia"
+    
+    "Credits" "Programmers: Seth Legaspi and Kenley Tan"
+    
+    "Credits" "Researchers: Jennifer Pagay and Wendell Laxamana"
+    
+    "Credits" "Music: Umineko naku no koro ni Musicbox Blue - Disc 1"
+    
+    "Credits" "Story by the Teampura Group"
+    
+    "Note" "No people were killed or hurt in the making of this vn... Probably."
             
     return
