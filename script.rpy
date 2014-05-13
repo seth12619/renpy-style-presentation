@@ -488,6 +488,8 @@ label credits:
     
     "" "--Credits--"
     
+    "Credits" "Information: 'Essentials of 16PF Assessment' by Heather E.P. Cattell, James M. Schuerger"
+    
     "Credits" "Background Images and Sprites: Nina Sanchez and Aemielvin Loremia"
     
     "Credits" "Programmers: Seth Legaspi and Kenley Tan"
