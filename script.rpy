@@ -446,7 +446,7 @@ label vigil:
     
     un "{color=#ffa500}VIGILANCE{/color} is the state of being wakeful or alert to environmental factors or stimuli"
     
-    un "{color=#ffa500}ABSTRACTEDNESS{/color} is "
+    un "{color=#ffa500}ABSTRACTEDNESS{/color} is preoccupation with something to the exclusion of all else"
     
     play music "bgmMask.mp3" fadein 2
     
