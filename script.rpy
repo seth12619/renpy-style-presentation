@@ -19,15 +19,24 @@ image bg office = "bgO.png"
 #Character sprites
 
 image guard normal = "guard.png"
-image adi normal = "bMate.png"
-image pro normal = "protest.png"
 
+image adi normal = "bMate.png"
+image adi2 normal = "bMateB.png"
+
+image pro normal = "protest.png"
+image proG normal = "girlP.png"
+
+image lit normal = "Cirno.png"
+
+image psyA normal = "carlo.png"
+image psyB normal = "jaoie.png"
+image psyC normal = "rico.png"
 
 # Declare characters used by this game.
 define secu = Character('Guard', color="#c8ffc8")
 define adsa = Character('ADSA', color="#ff0000")
 define fr = Character('Close Friend G', color="#ffcb05")
-define lit = Character('Lit Group Mate B', color="#f75b68")
+define lit = Character('Cirno', color="#f75b68")
 define fr2 = Character('Friend A', color="#ececea")     
 define wom = Character('Woman A', color="#cc5cf2")
 
@@ -121,6 +130,8 @@ label warmth:
     "" "Almost there..."
     
     show adi normal at left
+    with wipeleft
+    show adi2 normal
     with wipeleft
     
     menu:
@@ -229,11 +240,14 @@ label Social:
     
     "" "Alright, a party. Seems like this day's getting interesting..."
     
+    show lit normal
+    with wiperight
+    
     "?" "Yo! [MC!t]!"
     
     MC "Yes?"
     
-    lit "We're groupmates for Lit, I need to know what you want to do for our Play"
+    lit "I'm Cirno! We're groupmates for Lit, I need to know what you want to do for our Play"
     
     un "{color=#ffa500}SOCIAL BOLDNESS{/color} is one's comfort and confidence in social situations"
     
@@ -392,10 +406,13 @@ label perf:
     
     un "{color=#ffa500}TENSION{/color} is the inability to relax in some nerve wracking situations"
     
-    show pro at Move((0.5,0.64), (0.25, 0.64), 1,
+    show pro at Move((0.5,0.6), (0.25, 0.6), 1,
         xanchor="center", yanchor="center")
     
-    wom "We dying of heat, get a hert!"
+    show proG normal
+    with wiperight
+    
+    wom "We dying of heat, get nya hert!"
     
     menu:
             "" "That woman..."
@@ -423,6 +440,13 @@ label priv:
     with fade
     
     "" "Alright! There it is! Once I get to that area I will--"
+    
+    show psyA normal at left
+    with wiperight
+    show psyB normal
+    with wiperight
+    show psyC normal at right
+    with wiperight
 
     "Group of Psychology Students" "Bro! Please answer a few of our questions! It's for a project! Please!"
     
@@ -435,6 +459,11 @@ label priv:
     MC "Alright, but let me ask you a question afterwards ok?"
     
     "" "This might be a chance to ask about that voice..."
+    
+    hide psyA normal
+    with wipeleft
+    hide psyC normal
+    with wiperight
     
     "Psych. Student B" "Okay, umm sir; do you happen to have any insecurities?"
     
@@ -459,9 +488,17 @@ label priv:
         un "You're very insecure about youself and I could see that you're an open book."
                 
 label vigil:
+    
+    hide psyB normal
+    with wiperight
+    show psyC normal
+    with wiperight
     "Psych. Student C" "Okay sir, now for our second out of 344 questions..."
     
     MC "Excuse me, I need to go to the washroom for a bit"
+    
+    show psyA normal at left
+    with wiperight
         
     "Psych. Student A" "Sure go ahead, please come back though, we're counting on you!"\
     
