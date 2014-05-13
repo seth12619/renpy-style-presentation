@@ -253,10 +253,10 @@ label dom:
     menu:
             lit "You got it?"
             
-            "Okay, I'll get to working on it as soon as possible":
+            "Yeah, I'll be working on it as soon as possible":
                 $ response = True
             
-            "Wait, that seems a bit too much, can you distribute the tasks more efficiently? Inform me of the changes as well via Facebook":
+            "Wait, that seems to be too much; can you distribute the tasks more efficiently? Inform me of the changes as well via Facebook":
                 $ response = False
             
             "Okay":
@@ -460,16 +460,18 @@ label vigil:
     
     "" "What the?!?"
     
-    "" "Man in all black, complete set. Black jacket and mask... Right behind me..."
+    "" "A man in all black, complete set. Black jacket with a mask... Is right behind me..."
+    
+    "" "I wouldn't have noticed him if not for the mirror"
 
     menu:
             "" " This is creepy... What should I do?"
             
-            "KYAAAA!!! THIEF CRIMINAL! *attack the person*":
+            "KYAAAA!!! THIEF! CRIMINAL! *attack the person*":
                 $ response = True
             "Tap the man at the back, and whisper 'Heil Hydra' ":
                 $ response = False
-            "Tell the man that he might want to remove the mask, it's summer after all, it's quite hot out":
+            "Tell the man that he might want to remove the mask, it's summer after all, it's quite hot outside":
                 $ response = 1
                 
     if response is True:
