@@ -1,4 +1,4 @@
-﻿# You can place the script of your game in this file.
+# You can place the script of your game in this file.
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
@@ -12,6 +12,9 @@ image bg mvp = "bgE.png"
 image bg redRoad = "bgF.png"
 image bg gonz2 = "bgL.png"
 image bg wash = "bgJ.png"
+image bg black = "bgBl.png"
+image bg adsa = "bgK.png"
+
 
 # Declare characters used by this game.
 define secu = Character('Guard C', color="#c8ffc8")
@@ -131,7 +134,7 @@ label liveliness:
     scene bg mvp
     with fade
     
-    "" "Arrgh, why must I cross thee Sun, when I jounrey around the campus?!?"
+    "" "Arrgh, why must I cross thee Sun, when I journey around the campus?!?"
     
     "?" "[MC!t]!"
     
@@ -367,7 +370,7 @@ label perf:
     
     un "{color=#ffa500}TENSION{/color} is the inability to relax in some nerve wracking situations"
     
-    wom "We dying of heat, get a hearts!"
+    wom "We dying of heat, get a hert!"
     
     menu:
             "" "That woman..."
@@ -402,7 +405,7 @@ label priv:
     
     un "{color=#ffa500}PRIVATENESS{/color} is preferring to keep personal and confidential affairs to oneself"
     
-    un "{color=#ffa500}APPREHENSION{/color} is "
+    un "{color=#ffa500}APPREHENSION{/color} is self-doubt or the anxiety or fear that something bad might happen"
     
     MC "Alright, but let me ask you a question afterwards ok?"
     
@@ -425,7 +428,7 @@ label priv:
         un "You're confident about yourself and genuine about the situation."
         jump vigil
     if response is False:
-        un "You need your own space, but you're a self-assured guy."
+        un "You need your own space, but you're a self-assured person."
         jump vigil
     else:
         un "You're very insecure about youself and I could see that you're an open book."
@@ -438,7 +441,7 @@ label vigil:
     "Psych. Student A" "Sure go ahead, please come back though, we're counting on you!"\
     
     "" "You wish. 344 questions will take hours!"
-
+    
     scene bg wash
     with fade
     
@@ -446,7 +449,7 @@ label vigil:
     
     un "{color=#ffa500}VIGILANCE{/color} is the state of being wakeful or alert to environmental factors or stimuli"
     
-    un "{color=#ffa500}ABSTRACTEDNESS{/color} is preoccupation with something to the exclusion of all else"
+    un "{color=#ffa500}ABSTRACTEDNESS{/color} is the quality of openness to abstract ideas, fantasy, and imagination"
     
     play music "bgmMask.mp3" fadein 2
     
@@ -469,19 +472,35 @@ label vigil:
                 $ response = 1
                 
     if response is True:
-        un "You're very skeptical and practical when it comes to life. You will most likely survive."
+        un "Wow, straight and quick to a skeptical conclusion. Can't you at least imagine that I'm a fairy godmother or something? At the most, you'll survive."
         jump catell
     if response is False:
-        un "You have a great imagination and trust the people around you."
+        un "Heil! No worries at all with my very suspicious clothing? Very imaginative of you to think that Hydra exists..."
         jump catell
     else:
-        un "You're very practical about the world and trust others."
+        un "Yes, it is quite hot after all... Not even alert to my presence? No perspective? Very practical."
                 
 label catell:
     
+    "" "Hmm... Now that he talks about it... Wait, you're that--"
+    
+    scene bg black
+    with dissolve
+    
     play music "bgmCatell.mp3" fadein 2
+    
+    scene bg adsa
+    with fade
                 
-    "" "Catell should intro himself here"
+    "" "Urrgh... Murgle..."
+    
+    "" "What happened? I remember that I had to go to the ADSA due to a text, but then multiple things happened"
+    
+    "" "Where. Am. I?"
+    
+    #catell wearing mask comes in
+    
+    un "Welcome! Come on in!"
     
     
 label credits:
