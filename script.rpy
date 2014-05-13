@@ -63,7 +63,7 @@ label start:
     
     "" "Thus I began my journey to the Dean's office"
     
-    "" "Have I mentioned that I was outside the school eating lunch? Now I have to trek all the way back in this heat... Ugh..."
+    "" "Of all the days, I had to eat outside today. Now I have to trek all the way back in this heat... Ugh..."
     
 label reasoning:
     scene bg gate
@@ -131,7 +131,7 @@ label liveliness:
     scene bg mvp
     with fade
     
-    "" "Arrgh, why must I cross thee Sun, when I walk to places in this school?!?"
+    "" "Arrgh, why must I cross thee Sun, when I jounrey around the campus?!?"
     
     "?" "[MC!t]!"
     
@@ -139,7 +139,7 @@ label liveliness:
     
     fr "[MC!t], I've been looking everywhere for you! So... Umm..."
     
-    fr "It's my birthday this Saturday, it would be great if you’ll celebrate it with me and my friends!"
+    fr "It's my birthday this Saturday, it would be great if you’ll celebrate it with the gang!"
    
     un "{color=#ffa500}LIVELINESS{/color} is being happy or excited, while being confident at expressing it."
     
@@ -275,7 +275,7 @@ label sensitive:
     
     "" "Alright; I can see the building now... I don't even know where ADSA is..."
     
-    "?" "Hey [MC!t]! Come over here, I need to show you something on my laptop!"
+    "?" "Hey [MC!t]! Come over here, I got something awesome on my laptop!"
     
     "" "Oh, it's Friend A! Hmm... I wonder what he wants to show me..."
     
@@ -345,13 +345,13 @@ label open:
                 $ response = 1
                 
     if response is True:
-        un "stub dialogue"
+        un "You don't seem to be open to new ideas, but you believe in your own opinions. I like that song though..."
         jump perf
     if response is False:
-        un "stub dialogue"
+        un "You seem to be open to new ideas, but you get easily swayed by others. We are gonna wreck 'em all."
         jump perf
     else:
-        un "stub dialogue"
+        un "You're cool with new ideas, but you still think about these ideas deeply. Good job!."
     
 label perf:
     scene bg gonz
@@ -367,7 +367,7 @@ label perf:
     
     un "{color=#ffa500}TENSION{/color} is the inability to relax in some nerve wracking situations"
     
-    wom "We dying of heat, get a hert!"
+    wom "We dying of heat, get a hearts!"
     
     menu:
             "" "That woman..."
@@ -382,13 +382,13 @@ label perf:
                 $ response is 1
                 
     if response is True:
-        un "Stub Dialogue"
+        un "Nobody's perfect, but you expect everything to be perfect. Perfectionism drives the world and you'll impose it with force."
         jump priv
     if response is False:
-        un "Stub dialogue"
+        un "You aren't too particular about the details and you prefer to resolve things peacefully. "
         jump priv
     else:
-        un "Stub dialogue"
+        un "Good job avoiding conflict while correcting her mistakes. You tread the path of perfection peacefully."
                 
 label priv:
     scene bg gonz2
@@ -422,13 +422,13 @@ label priv:
                 $ response = 1
                 
     if response is True:
-        un "Stub dialogue"
+        un "You're confident about yourself and genuine about the situation."
         jump vigil
     if response is False:
-        un "Stub dialogue"
+        un "You need your own space, but you're a self-assured guy."
         jump vigil
     else:
-        un "Stub dialogue"
+        un "You're very insecure about youself and I could see that you're an open book."
                 
 label vigil:
     "Psych. Student C" "Okay sir, now for our second out of 344 questions..."
@@ -438,7 +438,7 @@ label vigil:
     "Psych. Student A" "Sure go ahead, please come back though, we're counting on you!"\
     
     "" "You wish. 344 questions will take hours!"
-    
+
     scene bg wash
     with fade
     
@@ -469,13 +469,13 @@ label vigil:
                 $ response = 1
                 
     if response is True:
-        un "Stub dialogue"
+        un "You're very skeptical and practical when it comes to life. You will most likely survive."
         jump catell
     if response is False:
-        un "Stub dialogue"
+        un "You have a great imagination and trust the people around you."
         jump catell
     else:
-        un "Stub dialogue"
+        un "You're very practical about the world and trust others."
                 
 label catell:
     
