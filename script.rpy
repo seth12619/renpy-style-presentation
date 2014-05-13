@@ -330,9 +330,9 @@ label open:
     
     "Guidon Newspaper" "'Blue Eagle the King' to be replaced by 'Wrecking Ball'"
     
-    un "Explain {color=#ffa500}Openness to change{/color}"
+    un "{color=#ffa500}Openness to Change{/color} is the acceptance of new ideas"
     
-    un "Explain {color=#ffa500}SELF-RELIANCE{/color}"
+    un "{color=#ffa500}SELF-RELIANCE{/color} is showing showing confidence in anyone's own abilities to do something without the help of others"
 
     menu:
             "" "I see... I guess it received a few complaints due to being too old"
@@ -363,9 +363,9 @@ label perf:
 
     "" "Seems like I've just met the radical 'THAC' group, which stands for {color=#f9ecb6}Tuition High thus Air-Con{/color}"
     
-    un "Explain {color=#ffa500}PERFECTIONISM{/color}"
+    un "{color=#ffa500}PERFECTIONISM{/color} is unacceptance of having mistakes or flaws"
     
-    un "Explain {color=#ffa500}TENSION{/color}"
+    un "{color=#ffa500}TENSION{/color} is the inability to relax in some nerve wracking situations"
     
     wom "We dying of heat, get a hert!"
     
@@ -400,7 +400,7 @@ label priv:
     
     "" "D*mn it! I'm trapped!"
     
-    un "{color=#ffa500}PRIVATENESS{/color} is "
+    un "{color=#ffa500}PRIVATENESS{/color} is preferring to keep personal and confidential affairs to oneself"
     
     un "{color=#ffa500}APPREHENSION{/color} is "
     
@@ -443,9 +443,23 @@ label vigil:
     with fade
     
     "" "Washing my face feels so goo--"
+    
+    un "{color=#ffa500}VIGILANCE{/color} is the state of being wakeful or alert to environmental factors or stimuli"
+    
+    un "{color=#ffa500}ABSTRACTEDNESS{/color} is "
+    
+    play music "bgmMask.mp3" fadein 2
+    
+    "" "That voice urrgh!"
+    
+    "" "*splash*"
+    
+    "" "What the?!?"
+    
+    "" "Man in all black, complete set. Black jacket and mask... Right behind me..."
 
     menu:
-            "" "Man in all black, complete set. Black jacket and mask... This is creepy... What should I do?"
+            "" " This is creepy... What should I do?"
             
             "KYAAAA!!! THIEF CRIMINAL! *attack the person*":
                 $ response = True
@@ -481,6 +495,8 @@ label credits:
     "Credits" "Researchers: Jennifer Pagay and Wendell Laxamana"
     
     "Credits" "Music: Umineko naku no koro ni Musicbox Blue - Disc 1"
+    
+    "Credits" "Music: Shingeki no Kyojin - Original Soundtrack by Hiroyuki Sawano"
     
     "Credits" "Story by the Teampura Group"
     
