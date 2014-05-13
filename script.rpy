@@ -552,6 +552,10 @@ label catell:
     
 label credits:
     
+    play music "bgmCredits.mp3" fadein 2
+    
+    scene bg black
+    
     "" "--Credits--"
     
     "Credits" "Information: 'Essentials of 16PF Assessment' by Heather E.P. Cattell, James M. Schuerger"
@@ -565,6 +569,8 @@ label credits:
     "Credits" "Music: Umineko naku no koro ni Musicbox Blue - Disc 1"
     
     "Credits" "Music: Shingeki no Kyojin - Original Soundtrack by Hiroyuki Sawano"
+    
+    "Credits" "Music: Mahou Shoujo Madoka Magica Special CD 6 by Yuki Kajiura"
     
     "Credits" "Story by the Teampura Group"
     
