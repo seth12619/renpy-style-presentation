@@ -32,12 +32,18 @@ image psyA normal = "carlo.png"
 image psyB normal = "jaoie.png"
 image psyC normal = "rico.png"
 
+image chi normal = "close.png"
+image ian normal = "tele.png"
+
+image cat mask = "catellmask.png"
+image cat normal = "catell.png"
+
 # Declare characters used by this game.
 define secu = Character('Guard', color="#c8ffc8")
 define adsa = Character('ADSA', color="#ff0000")
-define fr = Character('Close Friend G', color="#ffcb05")
+define fr = Character('Chi', color="#ffcb05")
 define lit = Character('Cirno', color="#f75b68")
-define fr2 = Character('Friend A', color="#ececea")     
+define fr2 = Character('Ian', color="#ececea")     
 define wom = Character('Woman A', color="#cc5cf2")
 
 define un = Character ('Unknown', color="#d4d4d2")
@@ -158,8 +164,6 @@ label warmth:
         un "It seems as though you can be pretty outgoing, yet distant, thus leading to a middleground when it comes to Warmth"
         
 label liveliness:
-    hide adi normal
-    with wiperight
     
     scene bg mvp
     with fade
@@ -168,7 +172,10 @@ label liveliness:
     
     "?" "[MC!t]!"
     
-    MC "Oh! It's close friend A!"
+    show chi normal
+    with wiperight
+    
+    MC "Oh! It's Chi!"
     
     fr "[MC!t], I've been looking everywhere for you! So... Umm..."
     
@@ -312,6 +319,9 @@ label sensitive:
     "" "Alright; I can see the building now... I don't even know where ADSA is..."
     
     "?" "Hey [MC!t]! Come over here, I got something awesome on my laptop!"
+    
+    show ian normal
+    with wipeleft
     
     "" "Oh, it's Friend A! Hmm... I wonder what he wants to show me..."
     
@@ -521,6 +531,9 @@ label vigil:
     
     "" "What the?!?"
     
+    show cat mask
+    with dissolve
+    
     "" "A man in all black, complete set. Black jacket with a mask... Is right behind me..."
     
     "" "I wouldn't have noticed him if not for the mirror"
@@ -564,18 +577,28 @@ label catell:
     
     MC "Where. Am. I?"
     
+    show cat mask
+    with wiperight
+    
     #catell wearing mask comes in
     
     un "Welcome [MC!t]! Come on in!"
     
     scene bg office
     with fade
+    show cat mask
+    with wipeleft
     
     un "You must be wondering where you are, what just happened to you, or what my identity is."
     
     un "Well..."
     
     #replace mask sprite with catell sprite
+    
+    hide cat mask
+    with dissolve
+    show cat normal
+    with dissolve
     
     un "I am Raymond Catell, the Dean who called you here."
     
