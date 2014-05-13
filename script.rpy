@@ -16,9 +16,15 @@ image bg black = "bgBl.png"
 image bg adsa = "bgK.png"
 image bg office = "bgO.png"
 
+#Character sprites
+
+image guard normal = "guard.png"
+image adi normal = "bMate.png"
+image pro normal = "protest.png"
+
 
 # Declare characters used by this game.
-define secu = Character('Guard C', color="#c8ffc8")
+define secu = Character('Guard', color="#c8ffc8")
 define adsa = Character('ADSA', color="#ff0000")
 define fr = Character('Close Friend G', color="#ffcb05")
 define lit = Character('Lit Group Mate B', color="#f75b68")
@@ -74,6 +80,9 @@ label reasoning:
     play music "bgmMain.mp3" fadein 2
     with fade
     
+    show guard normal
+    with wipeleft
+    
     secu "Good Afternoon sir. The climate's quite sizzling today isn't it?"
     
     un "{color=#ffa500}REASONING{/color} is the process of thinking about something in a logical manner to form a conclusion"
@@ -102,11 +111,17 @@ label reasoning:
     else:
         un "It seems you are capable of Abstract Reasoning and can easily make use of analogies"
         
+    hide guard normal
+    with wipeleft
+        
 label warmth:
     scene bg road
     with fade
     
     "" "Almost there..."
+    
+    show adi normal at left
+    with wipeleft
     
     menu:
             "" "Oh looks its my classmates! I guess I should..."
@@ -132,6 +147,9 @@ label warmth:
         un "It seems as though you can be pretty outgoing, yet distant, thus leading to a middleground when it comes to Warmth"
         
 label liveliness:
+    hide adi normal
+    with wiperight
+    
     scene bg mvp
     with fade
     
@@ -363,6 +381,9 @@ label perf:
     
     "" "I can see it! Once I make a turn here..."
     
+    show pro normal
+    with wipeleft
+    
     "Group of Students" "We want air-con! Tuition too high, or we go home! We want air-con! Tuition too high, or we go home!"
 
     "" "Seems like I've just met the radical 'THAC' group, which stands for {color=#f9ecb6}Tuition High thus Air-Con{/color}"
@@ -370,6 +391,9 @@ label perf:
     un "{color=#ffa500}PERFECTIONISM{/color} is unacceptance of having mistakes or flaws"
     
     un "{color=#ffa500}TENSION{/color} is the inability to relax in some nerve wracking situations"
+    
+    show pro at Move((0.5,0.64), (0.25, 0.64), 1,
+        xanchor="center", yanchor="center")
     
     wom "We dying of heat, get a hert!"
     
