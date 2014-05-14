@@ -634,6 +634,8 @@ label catell:
     
     cat "Yes. Everyone directly and indirectly made you make several choices based on the 16 Personality Factors"
     
+    cat "What of it?"
+    
     MC "Bonus Points?"
     
 label credits:
@@ -659,6 +661,8 @@ label credits:
     "Credits" "Music: Mahou Shoujo Madoka Magica Special CD 6 by Yuki Kajiura"
     
     "Credits" "Story by the Teampura Group"
+    
+    "Credits" "Run by the Ren'Py visual novel engine"
     
     "Note" "No people were killed or hurt in the making of this vn... Probably."
             
