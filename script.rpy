@@ -566,8 +566,6 @@ label catell:
     scene bg black
     with dissolve
     
-    play music "bgmCatell.mp3" fadein 2
-    
     scene bg adsa
     with fade
                 
@@ -577,12 +575,14 @@ label catell:
     
     MC "Where. Am. I?"
     
+    play music "bgmCatell.mp3" fadein 2
+    
     show cat mask
     with wiperight
     
     #catell wearing mask comes in
     
-    un "Welcome [MC!t]! Come on in!"
+    un "Welcome to the ADSA, [MC!t]! Come on in!"
     
     scene bg office
     with fade
